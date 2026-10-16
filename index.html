@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cinco Unidades — Franjas</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..100,400;62..100,700;62..100,900&display=swap">
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+img{max-width:100%}
+
+:root{--bg:#1b2610;--paper:#f6f1dc;--ink:#2b2008}
+body{background:var(--bg);color:var(--paper);font-family:"Archivo",sans-serif;line-height:1.5}
+.top{max-width:1240px;margin:0 auto;padding:48px 20px 28px;display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:end}
+.eyebrow{font-size:14px;color:#b7c79d}
+h1{font-family:"Archivo",sans-serif;font-stretch:62%;font-weight:900;font-size:clamp(48px,9vw,120px);line-height:.88;margin:14px 0 0;text-transform:uppercase;letter-spacing:-.01em;color:#ffd16a}
+.lede{margin:0 0 10px;font-size:17px;color:#e6e8d4}
+.byline{margin:0;font-weight:700;color:#f5b52e}
+.intro{max-width:1240px;margin:0 auto;padding:0 20px 32px;columns:2;column-gap:40px;color:#c9d4b3;font-size:15px}
+.intro p{margin:0 0 10px;break-inside:avoid}
+.hint{max-width:1240px;margin:0 auto;padding:0 20px 12px;font-size:13px;color:#b7c79d}
+.strips{max-width:1240px;margin:0 auto;display:flex;height:640px;padding:0 20px;gap:8px}
+.strip{flex:1 1 0;min-width:0;background:var(--c);color:var(--f);border-radius:22px;overflow:hidden;display:flex;transition:flex-grow .55s cubic-bezier(.65,0,.25,1)}
+.strip.on{flex-grow:9}
+.sh{all:unset;box-sizing:border-box;cursor:pointer;width:72px;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:20px 0;gap:16px}
+.sh:focus-visible{outline:4px solid var(--paper);outline-offset:-6px;border-radius:22px}
+.sh .r{font-weight:900;font-size:30px;font-stretch:62%}
+.sh .t{writing-mode:vertical-rl;transform:rotate(180deg);font-weight:700;font-size:17px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;text-align:left}
+.sh .arr{font-size:20px;transition:transform .3s}
+.strip.on .arr{transform:rotate(90deg)}
+.sb{flex:1;min-width:0;padding:24px 28px 24px 8px;overflow:auto;opacity:0;visibility:hidden;transition:opacity .3s}
+.strip.on .sb{opacity:1;visibility:visible;transition:opacity .4s .3s}
+.sb h2{font-stretch:62%;font-weight:900;font-size:clamp(28px,4vw,48px);line-height:.95;text-transform:uppercase;margin:0 0 20px}
+.hito{padding:12px 0;border-top:2px solid currentColor}
+.hito .w{font-size:13px;font-weight:700;opacity:.85}
+.hito b{display:block;font-size:18px;line-height:1.2}
+.hito p{margin:4px 0 0;font-size:15px}
+.reflexion{margin-top:16px;padding:14px 16px;border-radius:14px;background:rgba(0,0,0,.16);font-size:15px}
+.strip[data-i="1"] .reflexion,.strip[data-i="2"] .reflexion{background:rgba(255,255,255,.4)}
+.closing{max-width:1240px;margin:0 auto;padding:72px 20px 20px}
+.closing h2{font-stretch:62%;font-weight:900;text-transform:uppercase;font-size:clamp(40px,7vw,84px);line-height:.9;margin:0 0 12px;color:#f5b52e}
+.closing>p{color:#c9d4b3;max-width:52ch;margin:0 0 26px}
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.note{border-radius:22px;padding:24px}
+.note[data-who=Neri]{background:#ffd16a;color:var(--ink)}
+.note[data-who=Lucas]{background:#d9361e;color:#fff}
+.note h3{font-stretch:62%;font-weight:900;text-transform:uppercase;font-size:28px;margin:0 0 10px}
+.note p{margin:0 0 9px;font-size:15px}
+footer{max-width:1240px;margin:0 auto;padding:36px 20px 44px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:13px;color:#b7c79d}
+@media(max-width:860px){
+ .top,.notes{grid-template-columns:1fr}.intro{columns:1}
+ .strips{flex-direction:column;height:auto}
+ .strip{flex:none;flex-direction:column}
+ .sh{width:100%;flex-direction:row;padding:16px 18px}
+ .sh .t{writing-mode:horizontal-tb;transform:none;white-space:normal;flex:1;font-size:16px}
+ .sb{display:none;opacity:1;visibility:visible;padding:0 18px 20px}
+ .strip.on .sb{display:block}
+ .strip.on{flex-grow:0}
+}
+
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style></head><body>
+<header class="top"><div><div class="eyebrow">Gestión de las Organizaciones · Licenciatura en Tecnología Educativa, UTN</div><h1>Cinco unidades, una misma gestión</h1></div><div><p class="lede">Línea de tiempo reflexiva sobre el recorrido de la Unidad I a la Unidad V: lo que aprendimos, lo que nos costó y lo que todavía queremos profundizar.</p><p class="byline">Neri Castro &amp; Lucas Linquiman · Foro de Debate de la Unidad V</p></div></header>
+<div class="intro"><p>Esta línea de tiempo no es un resumen de contenidos: es una revisión conjunta de cómo fuimos construyendo, unidad tras unidad, una forma de mirar las organizaciones. Empezamos preguntándonos qué es una institución y terminamos preguntándonos cómo se gestiona el cambio tecnológico dentro de ella — y, en el medio, nos dimos cuenta de que ambas preguntas están más conectadas de lo que pensábamos.</p><p>Cada unidad reúne un hito aportado por cada uno de nosotros, marcado con su nombre. El cierre, al final, es individual: ahí cada uno cuenta qué se lleva y qué le falta profundizar.</p></div>
+<p class="hint">Elegí una franja para desplegarla.</p>
+<main class="strips"><section class="strip on" data-i="0" style="--c:#4f7d32;--f:#fff"><button type="button" class="sh" aria-expanded="true" aria-controls="sb0"><span class="r">I</span><span class="t">Sociología de las Instituciones</span><span class="arr" aria-hidden="true">▸</span></button><div class="sb" id="sb0"><h2>Sociología de las Instituciones</h2><div class="hito"><span class="w">Neri</span><b>La organización como tejido, no como organigrama</b><p>Cultura institucional, status y rol, y Comportamiento Organizacional como primeras herramientas para leer cualquier institución educativa desde adentro.</p></div><div class="hito"><span class="w">Lucas</span><b>El conflicto como objeto de gestión</b><p>Técnicas para resolver, gestionar, transformar y neutralizar conflictos — una idea que reaparece, con otro nombre, en la Unidad V al hablar de resistencia al cambio tecnológico.</p></div><div class="reflexion"><b>Lo que resuena:</b> ninguna organización es neutral; siempre hay una cultura, una distribución de roles y una tensión entre reproducir (funcionalismo, teoría de la reproducción) y transformar (teoría de la resistencia). Lo más difícil fue distinguir con precisión estas tres miradas al principio de la cursada.</div></div></section><section class="strip" data-i="1" style="--c:#ffd16a;--f:#2b2008"><button type="button" class="sh" aria-expanded="false" aria-controls="sb1"><span class="r">II</span><span class="t">Fundamentos de la Gestión</span><span class="arr" aria-hidden="true">▸</span></button><div class="sb" id="sb1"><h2>Fundamentos de la Gestión</h2><div class="hito"><span class="w">Lucas</span><b>De gestionar tareas a gestionar procesos</b><p>Gestión por procesos y gestión por proyectos como dos formas de ordenar el cambio dentro de una organización educativa.</p></div><div class="hito"><span class="w">Neri</span><b>Planificar es construir consenso</b><p>La planificación estratégica participativa y el modelo sistémico de calidad mostraron que planificar no es llenar una plantilla, sino poner de acuerdo a actores distintos.</p></div><div class="reflexion"><b>Lo que resuena:</b> esta unidad fue un quiebre porque pasamos de describir instituciones a tener herramientas concretas para gestionarlas. Comparar estilos de gestión académica en universidades argentinas reales fue la actividad más significativa: obligó a salir de la teoría. También empezamos a pensar la inteligencia artificial como tecnología de gestión de personas, no solo como recurso de aula.</div></div></section><section class="strip" data-i="2" style="--c:#f5b52e;--f:#2b2008"><button type="button" class="sh" aria-expanded="false" aria-controls="sb2"><span class="r">III</span><span class="t">La Gestión en las Organizaciones Socioproductivas</span><span class="arr" aria-hidden="true">▸</span></button><div class="sb" id="sb2"><h2>La Gestión en las Organizaciones Socioproductivas</h2><div class="hito"><span class="w">Neri</span><b>Tres lógicas de gestión</b><p>Comparar organización empresarial, social y pública mostró que "gestionar" cambia de sentido según los fines, los tiempos y los recursos disponibles de cada una.</p></div><div class="hito"><span class="w">Lucas</span><b>El conocimiento tácito también se gestiona</b><p>Diferenciar conocimiento tácito de explícito, y entender su conversión, fue clave para pensar el capital intelectual de una organización.</p></div><div class="hito"><span class="w">Neri &amp; Lucas</span><b>El rol del TE, diferenciado por organización</b><p>En la empresa, el Tecnólogo Educativo diseña y gestiona soluciones de capacitación y gestión del conocimiento con metodologías ágiles. En la organización social, facilita procesos participativos y de alfabetización digital con recursos acotados. En la organización pública, articula políticas de calidad e innovación dentro de marcos normativos y tiempos institucionales más rígidos.</p></div><div class="reflexion"><b>Lo que resuena:</b> el TP3 conjunto fue la actividad más significativa de la unidad porque obligó a aplicar esta diferenciación a un caso concreto, en vez de enunciarla de forma abstracta.</div></div></section><section class="strip" data-i="3" style="--c:#d9361e;--f:#fff"><button type="button" class="sh" aria-expanded="false" aria-controls="sb3"><span class="r">IV</span><span class="t">La Gestión Superior en Argentina</span><span class="arr" aria-hidden="true">▸</span></button><div class="sb" id="sb3"><h2>La Gestión Superior en Argentina</h2><div class="hito"><span class="w">Lucas</span><b>La gestión tiene marco legal</b><p>Leer las leyes 26.206, 24.521 (con su modificación de 2015) y 26.058 mostró que ninguna gestión universitaria ocurre en el vacío normativo.</p></div><div class="hito"><span class="w">Neri</span><b>Mirar la propia región</b><p>El análisis crítico de instituciones de educación superior a nivel nacional, provincial y regional permitió contrastar la norma con la realidad institucional más cercana.</p></div><div class="reflexion"><b>Lo que resuena:</b> lo más difícil de esta unidad fue el trabajo con el texto legal propiamente dicho; hizo falta volver más de una vez sobre los artículos para entender su alcance real sobre la gestión universitaria. Analizar casos reales de gestión de tecnologías educativas en el nivel superior ubicó al Tecnólogo Educativo como quien traduce esa ley en decisiones técnicas concretas.</div></div></section><section class="strip" data-i="4" style="--c:#2f4d1d;--f:#fff"><button type="button" class="sh" aria-expanded="false" aria-controls="sb4"><span class="r">V</span><span class="t">Las TIC en la Gestión de las Organizaciones</span><span class="arr" aria-hidden="true">▸</span></button><div class="sb" id="sb4"><h2>Las TIC en la Gestión de las Organizaciones</h2><div class="hito"><span class="w">Neri</span><b>La organización atravesada por la tecnología</b><p>Globalización, virtualización y transdisciplinariedad como tres formas en que las TIC transforman el núcleo de cualquier organización.</p></div><div class="hito"><span class="w">Lucas</span><b>Conectivismo y aprendizaje ubicuo</b><p>Conectivismo, aprendizaje colaborativo, cognición distribuida y aprendizaje ubicuo como marcos para pensar la gestión tecnológica educativa.</p></div><div class="hito"><span class="w">Neri &amp; Lucas</span><b>De la resistencia a la apropiación</b><p>Retomamos la idea de conflicto de la Unidad I, ahora aplicada al cambio tecnológico, junto con el rol del director como promotor de TIC y gestor del cambio.</p></div><div class="reflexion"><b>Lo que resuena:</b> esta unidad cierra el recorrido porque retoma, con otro vocabulario, preguntas que ya nos habíamos hecho en la Unidad I sobre cultura, resistencia y rol. Es la que más directamente dialoga con nuestro futuro perfil profesional.</div></div></section></main>
+<section class="closing"><h2>Lo que nos llevamos, cada uno</h2><p>El recorrido fue compartido, pero lo que cada uno se lleva — y lo que todavía le falta profundizar — es distinto.</p><div class="notes"><article class="note" data-who="Neri"><h3 class="">Neri Castro</h3><p class=""><strong>Saber que más resuena:</strong> pensar el conflicto y la resistencia como parte normal de cualquier cambio organizacional, no como un fracaso de gestión.</p><p class=""><strong>Para profundizar:</strong> la gestión del conocimiento tácito, que fue la parte de la Unidad III que menos alcanzamos a trabajar en profundidad.</p><p class=""><strong>Para mejorar:</strong> organizar mejor los tiempos de lectura del material teórico antes de encarar cada actividad.</p></article><article class="note" data-who="Lucas"><h3 class="">Lucas Linquiman</h3><p class=""><strong>Saber que más resuena:</strong> el rol del director/gestor como promotor del cambio tecnológico, porque conecta directo con el perfil del Tecnólogo Educativo.</p><p class=""><strong>Para profundizar:</strong> el marco legal de la Unidad IV, que todavía se siente denso y requiere una segunda lectura.</p><p class=""><strong>Para mejorar:</strong> empezar antes el diseño de las producciones grupales, para no dejar la parte visual para el final.</p></article></div></section>
+<footer><span>Gestión de las Organizaciones — Unidad V</span><span>Neri Castro &amp; Lucas Linquiman</span></footer>
+<script>
+
+(function(){
+  var s=[].slice.call(document.querySelectorAll('.strip'));
+  s.forEach(function(el){el.querySelector('.sh').addEventListener('click',function(){
+    s.forEach(function(o){var on=o===el;o.classList.toggle('on',on);o.querySelector('.sh').setAttribute('aria-expanded',on)});
+  })});
+})();
+
+</script>
+</body></html>
